@@ -10,3 +10,4 @@ export * from './models/user';
 // Components
 export * from './components/login/login.component';
 export * from './components/registration/registration.component';
+export * from './components/modification/modification.component';

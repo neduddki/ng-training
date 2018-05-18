@@ -6,19 +6,23 @@ import {
   UserRoutingModule,
   LoginComponent,
   RegistrationComponent,
+  ModificationComponent,
   UserService
 } from './user.barrel';
+import { HttpClient, HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   imports: [
     CommonModule,
     FormsModule,
     ReactiveFormsModule,
-    UserRoutingModule
+    UserRoutingModule,
+    HttpClientModule
   ],
   declarations: [
     LoginComponent,
-    RegistrationComponent
+    RegistrationComponent,
+    ModificationComponent
   ],
   providers: [
     UserService
